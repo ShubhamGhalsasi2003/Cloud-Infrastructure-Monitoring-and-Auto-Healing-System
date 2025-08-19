@@ -1,3 +1,6 @@
+![EC2](https://img.shields.io/badge/Tool-EC2-blue) ![CloudWatch](https://img.shields.io/badge/Tool-CloudWatch-orange) ![Lambda](https://img.shields.io/badge/Tool-Lambda-red) ![IAM](https://img.shields.io/badge/Tool-IAM-lightgrey) ![Terraform](https://img.shields.io/badge/Tool-Terraform-purple)   ![Logs](https://img.shields.io/badge/Data-Cloud_Logs-lightgrey)  ![In Progress](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+
 #  Real-Time Cloud Infrastructure Monitoring & Auto-Healing System
 
 This project is a real-time cloud infrastructure monitoring and recovery system built using **AWS CloudWatch**, **AWS Lambda**, and **Terraform**. It automatically detects if an EC2 instance is failing and heals it (reboot or restart) without human intervention.

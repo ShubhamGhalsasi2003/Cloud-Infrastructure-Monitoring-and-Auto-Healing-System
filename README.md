@@ -10,13 +10,13 @@ This project is a real-time cloud infrastructure monitoring and recovery system 
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 Ensure high availability and self‑recovery of EC2 instances by monitoring system health and CPU usage, then auto‑repairing with AWS‑native services.
 
 ---
 
-## ⚙️ What I Used
+##  What I Used
 
 - **AWS EC2** – Linux virtual machine
 - **AWS CloudWatch** – Metrics & alarms
@@ -26,9 +26,9 @@ Ensure high availability and self‑recovery of EC2 instances by monitoring syst
 
 ---
 
-## 🛠️ Manual AWS Setup (before Terraform)
+##  Manual AWS Setup (before Terraform)
 
-### 1️⃣ Launch an EC2 Instance
+### 1️ Launch an EC2 Instance
 1. Open the EC2 console → **Launch Instance**  
 2. Choose Amazon Linux 2 or Ubuntu AMI  
 3. Select `t2.micro` (free tier)  
@@ -36,14 +36,14 @@ Ensure high availability and self‑recovery of EC2 instances by monitoring syst
 5. Allow SSH (port 22) in the security group  
 6. Download the key pair (e.g., `my‑key.pem`)
 
-### 2️⃣ Create an IAM Role for Lambda
+### 2️ Create an IAM Role for Lambda
 1. IAM → Roles → **Create role**  
 2. Trusted entity: **Lambda**  
 3. Attach policies: `AmazonEC2FullAccess`, `CloudWatchFullAccess`  
 4. Name it **LambdaAutoHealRole**
 
 
-### 4️⃣ Deploy Lambda Function
+### 3 Deploy Lambda Function
 1. Lambda → Create function → *Author from scratch*  
 2. Name: **AutoHealInstance** | Runtime: *Python 3.x*  
 3. Attach **LambdaAutoHealRole**  
@@ -53,7 +53,7 @@ Ensure high availability and self‑recovery of EC2 instances by monitoring syst
 
 ---
 
-## 🧱 Terraform Deployment
+##  Terraform Deployment
 
 ### Edit Variables
 hcl
@@ -75,7 +75,7 @@ Terraform launches the EC2 instance, tags it, and sets up alarms.
 
 
 
-## 📂 Project Structure
+##  Project Structure
 
 Cloud-Infrastructure-Monitoring/
 ├── alarms/
@@ -90,7 +90,7 @@ Cloud-Infrastructure-Monitoring/
 
 
 
-## 🧪 Test the Auto‑Healing
+##  Test the Auto‑Healing
 1. Stop or terminate the EC2 instance manually.  
 2. CloudWatch alarm fires → triggers Lambda.  
 3. Lambda action reboots / replaces the instance.  
@@ -98,7 +98,7 @@ Cloud-Infrastructure-Monitoring/
 
 ---
 
-## 🔧 Tool Summary
+##  Tool Summary
 
 | Service   | Purpose                          |
 |-----------|----------------------------------|
@@ -109,7 +109,7 @@ Cloud-Infrastructure-Monitoring/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 **Shubham Ghalsasi**  
 B.Tech – Cloud Computing, MIT ADT University  
 📫 ghalsasishubham@gmail.com

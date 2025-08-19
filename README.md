@@ -1,6 +1,6 @@
 ![EC2](https://img.shields.io/badge/Tool-EC2-blue) ![CloudWatch](https://img.shields.io/badge/Tool-CloudWatch-orange) ![Lambda](https://img.shields.io/badge/Tool-Lambda-red) ![IAM](https://img.shields.io/badge/Tool-IAM-lightgrey) ![Terraform](https://img.shields.io/badge/Tool-Terraform-purple)   
 
-![Logs](https://img.shields.io/badge/Monitor-Cloud_Logs-lightgrey)  
+![Logs](https://img.shields.io/badge/Track-Cloud_Logs-lightgrey)  
 ![Completed](https://img.shields.io/badge/Status-Completed-success)
 
 
